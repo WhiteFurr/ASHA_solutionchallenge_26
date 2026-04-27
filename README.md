@@ -1,16 +1,39 @@
-# React + Vite
+# CareRoute | ASHA Supervisor Dashboard 🩺
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time, AI-integrated health management dashboard designed to empower ASHA (Accredited Social Health Activists) supervisors. This platform enables regional health monitoring, patient prioritization, and AI-driven clinical insights.
 
-Currently, two official plugins are available:
+## The Solution
+This dashboard addresses the "Human-in-the-loop" challenge in community health. It allows supervisors to:
+- **Monitor Multiple Regions:** Unified view of health workers across regions (A1-A6).
+- **Geospatial Mapping:** Integrated map view for every patient list to visualize health coverage in real-time.
+- **Smart Patient Roster:** Instant search and filtering by name, condition, or critical status.
+- **AI-Driven Insights:** Review AI-generated checklists and status reports for each patient.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Frontend:** React.js / Vite
+- **Database:** Google Firebase (Cloud Firestore)
+- **State Management:** React Hooks
+- **Styling:** Modern CSS-in-JS
 
-## React Compiler
+## Features
+- **Real-time Sync:** Powered by Firestore `onSnapshot` for live data updates.
+- **Advanced Search:** Multi-parameter search across 60+ patient records.
+- **Regional Scaling:** Dynamic routing for infinite scalability of health worker zones.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Setup & Installation
+1. **Clone the repository:**
+   ```bash
+    git clone [your-repo-link]
 
-## Expanding the ESLint configuration
+2. Install dependencies:
+   ```Bash
+    npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Configure Firebase:
+   Update your credentials in src/firebase.js.
+
+4. Run the development server:
+   ```Bash
+    npm run dev
+
+### Built for the Google Solution Challenge 2026.
